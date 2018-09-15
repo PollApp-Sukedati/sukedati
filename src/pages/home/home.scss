@@ -1,3 +1,26 @@
 page-home {
 
 }
+
+$account-icon-size: 40vw;
+
+.account-image{
+  // height: 22vh;
+  // width: 100%;
+  left: 20%;
+  position: relative;
+  ion-icon{
+    font-size: $account-icon-size;
+    vertical-align: middle;
+  }
+}
+
+.account-status{
+  color: white;
+  ul{
+    padding: 0;
+    li{
+      list-style: none;
+    }
+  }
+}
