@@ -35,3 +35,33 @@ $account-icon-size: 40vw;
     margin-top: 1vh;
   }
 }
+
+.account-name{
+  margin-left: 5vw;
+  .user-name{
+    color: white;
+    font-size: 20px;
+  }
+}
+
+.account-info{
+  hr{
+    background-color: white;
+    margin: 0;padding: 0;
+  }
+}
+.account-menu{
+  text-align: right;
+  button{
+    padding: 0 3vw 0 0;
+    height: 100%;
+    width: 20%;
+    vertical-align: middle;
+    background-color: rgba(0, 0, 0, 0);
+    text-align: right;
+    ion-icon{
+      font-style: white;
+      font-size: 6vw;
+    }
+  }
+}
