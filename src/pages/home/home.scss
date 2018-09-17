@@ -17,13 +17,21 @@ $account-icon-size: 40vw;
 
 .account-status{
   color: white;
+  .status-title{
+    margin: 1vh 0;
+  }
   ul{
     padding: 0;
+    margin: 1vh 0;
     li{
       list-style: none;
     }
   }
   hr{
+    margin: 1vh 0;
     background-color: white;
+  }
+  h2{
+    margin-top: 1vh;
   }
 }
