@@ -12,9 +12,18 @@ import { Component } from '@angular/core';
 })
 export class HomeListComponent {
 
-  title: string = "未回答";
+  title: string;
+  cards: Array<{title: string, team: string, dedline: number}>;
 
   constructor() {
+    this.cards = [];
+    for (let i = 1; i < 6; i++) {
+      this.cards.push({
+        title: 'title ' + i,
+        team: 'P&D',
+        dedline: i
+      });
+    }
   }
 
 }
