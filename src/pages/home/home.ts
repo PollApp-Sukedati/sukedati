@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { HomeStatusComponent } from "../../components/home-status/home-status";
+import { ComponentsModule } from "../../components/components.module";
+
 
 @Component({
   selector: 'page-home',
