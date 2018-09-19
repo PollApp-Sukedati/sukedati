@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { HomeStatusComponent } from './home-status/home-status';
 import { HomeListComponent } from './home-list/home-list';
 @NgModule({
@@ -6,6 +6,7 @@ import { HomeListComponent } from './home-list/home-list';
     HomeListComponent],
 	imports: [],
 	exports: [HomeStatusComponent,
-    HomeListComponent]
+    HomeListComponent],
+	schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
 export class ComponentsModule {}

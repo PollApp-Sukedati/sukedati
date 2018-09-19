@@ -12,11 +12,9 @@ import { Component } from '@angular/core';
 })
 export class HomeListComponent {
 
-  text: string;
+  title: string = "未回答";
 
   constructor() {
-    console.log('Hello HomeListComponent Component');
-    this.text = 'Hello World';
   }
 
 }
