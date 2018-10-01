@@ -40,4 +40,27 @@
     </ion-row>
     <hr>
   </ion-grid>
+
+  <div class="home__list">
+    <h3 class="home__list__title">未回答</h3>
+    <ion-list class="answered-list">
+      <ion-card class="answered-list__item" *ngFor="let item of items">
+        <ion-card-content>
+          <ion-card-title>Hello World</ion-card-title>
+          <p>The content for this card</p>
+        </ion-card-content>
+      </ion-card>
+    </ion-list>
+
+    <h3 class="home__list__title home__list__title_second">参加アンケート</h3>
+    <ion-list class="answered-list">
+      <ion-card class="answered-list__item" *ngFor="let item of items">
+        <ion-card-content>
+          <ion-card-title>Hello World</ion-card-title>
+          <p>The content for this card</p>
+        </ion-card-content>
+      </ion-card>
+    </ion-list>
+  </div>
+
 </ion-content>
