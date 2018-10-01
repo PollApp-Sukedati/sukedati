@@ -9,7 +9,9 @@ export class HomePage {
   items: any = [];
 
   constructor(public navCtrl: NavController) {
-    this.items = [1,2,3,4,5];
+    for (let i = 1; i < 6; i++) {
+      this.items.push({title: "title " + i, note: "sample" + i});
+    }
   }
 
 }
