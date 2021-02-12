@@ -71,7 +71,19 @@ $colors: (
 // default are overridden.
 
 @import "ionic.theme.default";
-
+ion-content{
+  background: linear-gradient(211.17deg, #6179FE 0%, rgba(32, 183, 231, 0) 100%), linear-gradient(148.63deg, #7085FF 0.58%, rgba(218, 239, 255, 0.64) 50.02%, #75C9F1 100%), #20B7E7;
+}
+.ion-header{
+  display: none;
+}
+.toolbar-background{
+  opacity: 0;
+}
+ion-icon{
+  color: white;
+  opacity: 1.0;
+}
 
 // Ionicons
 // --------------------------------------------------

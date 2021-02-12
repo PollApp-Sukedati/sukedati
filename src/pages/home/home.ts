@@ -6,9 +6,10 @@ import { NavController } from 'ionic-angular';
   templateUrl: 'home.html'
 })
 export class HomePage {
+  items: any = [];
 
   constructor(public navCtrl: NavController) {
-
+    this.items = [1,2,3,4,5];
   }
 
 }

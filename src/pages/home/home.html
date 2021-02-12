@@ -1,18 +1,66 @@
-<ion-header>
+<ion-header no-border>
   <ion-navbar>
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Home</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h3>Ionic Menu Starter</h3>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div class="account-image">
+          <ion-icon name="person"></ion-icon>
+        </div>
+      </ion-col>
+      <ion-col>
+        <div class="account-status">
+          <h2 class="status-title">status</h2>
+          <ul>
+            <li>参加アンケート</li>
+            <li>回答数</li>
+            <li>期限切れ</li>
+          </ul>
+          <hr>
+          <h2>回答率</h2>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
+  <ion-grid class="account-info">
+    <ion-row>
+      <ion-col class="account-name">
+        <span class="user-name">アカウント名</span>
+      </ion-col>
+      <ion-col class="account-menu">
+        <button name="account-menu" type="submit"><ion-icon name="more"></ion-icon></button>
+      </ion-col>
+    </ion-row>
+    <hr>
+  </ion-grid>
 
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+  <div class="home__list">
+    <h3 class="home__list__title">未回答</h3>
+    <ion-list class="answered-list">
+      <ion-card class="answered-list__item" *ngFor="let item of items">
+        <ion-card-content>
+          <ion-card-title>Hello World</ion-card-title>
+          <p>The content for this card</p>
+        </ion-card-content>
+      </ion-card>
+    </ion-list>
+
+    <h3 class="home__list__title home__list__title_second">参加アンケート</h3>
+    <ion-list class="answered-list">
+      <ion-card class="answered-list__item" *ngFor="let item of items">
+        <ion-card-content>
+          <ion-card-title>Hello World</ion-card-title>
+          <p>The content for this card</p>
+        </ion-card-content>
+      </ion-card>
+    </ion-list>
+  </div>
+
 </ion-content>
